@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secondo Progetto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+	<!-- librerie js -->
+	<script src="lib/three.js"></script>
+	<script src="lib/OrbitControls.js"></script>
+	<script src="lib/GLTFLoader.js"></script>
+	<script src="lib/Detector.js"></script>
+	<script src="lib/stats.min.js"></script>
+	<script src="lib/ausiliarie.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <p class="title">Il nostro modello sotto i riflettori</p>
+            <div class="logo">
+                <img id="uniud" src="images/Uniud.png" alt="logo università degli studi di Udine"></img>
+            </div>
+            <div class="description">
+                <p>Scena interattiva, è possibile fermare, disattivare e cambiare le luci, guarda il nostro angioletto sotto una luce diversa</p>
+            </div>
+        </div>
+
+        <div class="inner-container"></div>
+            <div id="canvas">
+					<script src="angeloLuciDinamiche.js"></script>
+            </div>
+            <div class="nav-bar">
+                <p class="subtitle">Modifica Scena</p>
+                <table class="dyn-scene-table">
+                    <tr>
+                        <td id="section" colspan="4">Luce 1</td>
+                    </tr>
+                    <tr> 
+                        <td><a href="#" onClick="cambiaStatoLuce1('stop')">Ferma Luce 1</a></td>
+                        <td><a href="#" onClick="cambiaStatoLuce1('play')">Anima Luce 1</a></td>
+                        <td><a href="#" onClick="interruttoreLuce1('off')">Spegni Luce 1</a></td>
+                        <td><a href="#" onClick="interruttoreLuce1('on')">Accendi Luce 1</a></td>
+                    </tr>
+                    <tr>
+                        <td id="section" colspan="4">Luce 2</td>
+                    </tr>
+                    <tr> 
+                        <td><a href="#" onClick="cambiaStatoLuce2('stop')">Ferma Luce 2</a></td>
+                        <td><a href="#" onClick="cambiaStatoLuce2('play')">Anima Luce 2</a></td>
+                        <td><a href="#" onClick="interruttoreLuce2('off')">Spegni Luce 2</a></td>
+                        <td><a href="#" onClick="interruttoreLuce2('on')">Accendi Luce 2</a></td>
+                    </tr>
+                    <tr>
+                        <td id="section" colspan="4">Rotazione Angioletto</td>
+                    </tr>
+                    <tr> 
+                        <td colspan="2"><a href="#" onClick="cambiaStatoAngioletto('stop')">Ferma Angioletto</a></td>
+                        <td colspan="2"><a href="#" onClick="cambiaStatoAngioletto('play')">Anima Angioletto</a></td>
+                    </tr>
+					<tr>
+                        <td id="section" colspan="4">RGB</td>
+                    </tr>
+                    <tr> 
+                        <td colspan="2"><a href="#" onClick="animaRGB(1)">Luce 1</a></td>
+                        <td colspan="2"><a href="#" onClick="animaRGB(2)">Luce 2</a></td>
+                    </tr>	
+                </table>
+                <hr>
+                <div class="link-button">
+                    <br>
+                    <a href="sito.html">Torna alla pagina principale</a>
+                </div>
+            </div>
+            <div class="under-text">
+                <p><em>
+                "Putto è un termine che nel campo dell'arte indica un bambino nudo, quasi sempre di sesso maschile e spesso raffigurato con le ali.
+                La figura del putto è stata utilizzata in raffigurazioni allegoriche o per fini puramente decorativi in forma ripetitiva.
+                Dall'antichità ad oggi sono stati utilizzati per raffigurare la figura infantile di Eros, il dio dell'amore, e in questa forma è conosciuto anche come "erote", "cupido" o "amorino". Esempi di tali raffigurazioni si trovano già in sculture e rilievi greci o in pitture di Pompei.
+                Già in epoca romana assume spesso un valore soprattutto decorativo, con scene di putti impegnati in scherzosi combattimenti, competizioni sportive, riti religiosi o in altre attività (pesca, vendemmia, attività produttive). Un carattere ancora più marcatamente decorativo assumono i putti sorreggenti ghirlande, per esempio nei sarcofagi."</em>
+                <br>
+                </p>
+                <span>-Wikipedia</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,219 @@
+@font-face{
+    font-family: 'Knewave';
+    src: url(fonts/Knewave/Knewave-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Open Sans';
+    src: url(fonts/Open_Sans/OpenSans-SemiBoldItalic.ttf);
+}
+body {
+    background-image: url(images/marble.jpg);
+    height: 100%;
+    color: #662E1C;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    align-content: center;
+    min-width: 500px;
+    min-height: 50px;   
+}
+
+.header {
+    position: absolute;
+    left: 1%;
+    top: 2%;
+    width: 98%;
+    height: 12%;
+    min-width: 500px;
+    min-height: 50px;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Knewave', cursive;
+    font-size: 50px;
+    margin: 0px;
+}
+
+
+.subtitle {
+    font-family: 'Knewave', cursive;
+    font-size: 30px;
+    color: #AF4425;
+    text-align: center;
+    margin: 0px;
+}
+
+.logo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+#uniud {
+    width: 100px;
+    height: 100px;
+}
+
+.description {
+    position: absolute;
+    top: 65%;
+    left: 4%;
+    height: 35%;
+    width: 92%;
+    min-width: 450px;
+    min-height: 10px;
+}
+
+.inner-container {
+    position: absolute;
+    min-width: 900px;
+    width: 98%;
+    height: 84%;
+    left: 1%;
+    top:15%;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 3px rgb(201, 166, 107) solid;
+    background: rgb(235, 220, 178); 
+    border-radius: 10px;
+}
+
+#canvas {
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    background-color: rgb(240, 237, 229);
+    top: 16%;
+    left: 2%;
+}
+
+.nav-bar {
+    position: absolute;
+    height: 780px;
+    width: 24%;
+    top: 16%;
+    right: 3.5%;
+    text-align: left;
+}
+
+.background-table {
+    width: 110%;
+    height: 15%;
+}
+
+.link-button {
+    width: 110%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.link-button a:link, a:visited {
+    border: 2px solid rgb(201, 166, 107);
+    padding: 4px;
+    transition: 0.5s;
+    text-decoration: none;
+    font-family: 'Knewave', cursive;
+    color: inherit;
+}
+
+.link-button a:hover, a:active {
+    border: 2px solid rgb(117, 97, 63);
+    padding: 4px;
+    background-color: rgb(185, 155, 102);
+    border-radius: 6px;
+    font-family: 'Knewave', cursive;
+    text-decoration: none;
+}
+
+.under-text {
+    position: absolute;
+    height: 200px;
+    width: 70%;
+    top: 78%;
+    left: 2%;
+    font-family: Georgia, serif;
+}
+
+ul {
+    display: inline;
+    list-style-position: inside;
+    left: 0px;
+}
+
+.inner-list li {
+    position: absolute;
+    display: inline-block;
+    left: 10px;
+}
+
+table {
+    text-align: center;
+}
+
+#section {
+    font-family: 'Knewave', cursive;
+    border: none;
+    padding: 25px 0px 0px 0px;
+}
+
+.dyn-scene-table td {
+    border: 2px solid #c9a66b; 
+}
+
+#selector a:visited, a:link {
+    border: none;
+    padding: 0px;
+    background-color: transparent;
+    border-radius: 6px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+#selector a:hover, a:active {
+    color: #c9a66b;
+    text-decoration: none;
+    border: none;
+    padding: 0px;
+    background-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+#materiale {
+    margin: 5px 7px;
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    border: 2px #c9a66b solid;
+}
+
+#materiale {
+    margin: 5px 7px;
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    border: 2px #c9a66b solid;
+}
+
+#sfondo {
+    margin: 5px 7px;
+    width: 90px;
+    height: 90px;
+}
+
+.text {
+    padding-top: 0px;
+}
+
+.buy-section {
+    display: block;
+    text-align: center;
+}

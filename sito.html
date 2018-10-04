@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campagna A.C.M.E.</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+	<!-- librerie js -->
+	<script src="lib/three.js"></script>
+	<script src="lib/OrbitControls.js"></script>
+	<script src="lib/GLTFLoader.js"></script>
+	<script src="lib/Detector.js"></script>
+	<script src="lib/stats.min.js"></script>
+	<script src="lib/ausiliarie.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <p class="title">Campagna di conservazione artistica A.C.M.E.</p>
+            <div class="logo">
+                <img id="uniud" src="images/Uniud.png" alt="logo università degli studi di Udine"></img>
+            </div>
+            <div class="description">
+                <p>Partecipa alla conservazione delle meraviglie di queste terre, aiutaci acquistando un angioletto</p>
+            </div>
+        </div>
+
+        <div class="inner-container"></div>
+            <div id="canvas">
+					<script src="angelo.js"></script>
+            </div>
+            <div class="nav-bar">
+                <p class="subtitle">Modifica Materiali</p>
+                <table>
+                    <tr> 
+                        <td><a href="#" onClick="cambiaMateriale('pietra')"><img id="materiale" src="images/pietra.jpg" alt="pietra"></a></td>
+                        <td><a href="#" onClick="cambiaMateriale('fingerprint')"><img id="materiale" src="textures/fingerprint_1024/Base_Color.png" alt="impronte"></a></td>
+                        <td><a href="#" onClick="cambiaMateriale('oro')"><img id="materiale" src="images/gold.jpg" alt="oro"></a></td>
+                    </tr>
+                </table>
+                <hr>
+                <p class="subtitle">Modifica Riflessi</p>
+                <div class="background-table">
+                    <table>
+                        <tr> 
+                            <td><a href="#" onClick="cambiaCubeMap('colosseo')"><img id="materiale" src="cubeMap/Colosseum/posz.jpg" alt="colosseo"></a></td>
+                            <td><a href="#" onClick="cambiaCubeMap('fisherman')"><img id="materiale" src="cubeMap/FishermansBastion/negx.jpg" alt="fishermanbastion"></a></td>
+                            <td><a href="#" onClick="cambiaCubeMap('fortpoint')"><img id="materiale" src="cubeMap/FortPoint/posx.jpg" alt="fortpoint"></a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="link-button">
+                    <a href="sitoLuciDinamiche.html">Prova la scena dinamica</a>
+                </div>
+                <hr>
+                <div class="text">
+                    <p>Acquistando un angioletto, oltre ad avere un piccolo ricordo, farai anche una donazione per la conservazione degli elementi architettonici storici della zona, ci impegnamo per preservare il nostro passato.</p>
+                </div>
+                <div class="buy-section">
+                    <p>Acquista ora un angioletto</p>
+                    <a href="#"><img src="images/cart_icon.png" alt="carrello della spesa" height="50" width="50"></a>
+                </div>
+            </div>
+            <div class="under-text">
+                <p><em>
+                "Putto è un termine che nel campo dell'arte indica un bambino nudo, quasi sempre di sesso maschile e spesso raffigurato con le ali.
+                La figura del putto è stata utilizzata in raffigurazioni allegoriche o per fini puramente decorativi in forma ripetitiva.
+                Dall'antichità ad oggi sono stati utilizzati per raffigurare la figura infantile di Eros, il dio dell'amore, e in questa forma è conosciuto anche come "erote", "cupido" o "amorino". Esempi di tali raffigurazioni si trovano già in sculture e rilievi greci o in pitture di Pompei.
+                Già in epoca romana assume spesso un valore soprattutto decorativo, con scene di putti impegnati in scherzosi combattimenti, competizioni sportive, riti religiosi o in altre attività (pesca, vendemmia, attività produttive). Un carattere ancora più marcatamente decorativo assumono i putti sorreggenti ghirlande, per esempio nei sarcofagi."</em>
+                <br>
+                </p>
+                <span>-Wikipedia</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
